@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>URBBAN LOOPS</title>
+    <link rel="stylesheet" href="styles5.css"> <!-- External CSS -->
+</head>
+<body>
+    <h1>URBBAN LOOPS</h1>
+
+    <nav>
+        <li><a href="#HOME">HOME</a></li>
+        <li><a href="#ABOUT">ABOUT</a></li>
+        <li><a href="#PRODUCTS">PRODUCTS</a></li>
+        <li><button onclick="togglecart()">CART 🛒</button></li>
+        <li><button onclick="location.href='signup.html'">SIGNUP</button></li>
+        <li><button onclick="location.href='LOGIN.html'">LOGIN</button></li>
+    </nav>
+
+    <button id="toggleBtn">SWITCH TO DARK MODE</button>
+
+    <!-- HOME -->
+    <section id="HOME" class="HOME">
+        <div class="banner-video" style="text-align: center; margin-top: 120px;">
+            <video class="banner-video" autoplay loop muted playsinline>
+                <source src="sunreel.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="ABOUT" class="about-section">
+        <h2>🧶ABOUT URBBAN LOOPS</h2>
+        <p><b><At URBBAN LOOPS, every stitch is a story.</b> 
+            We are a creative space dedicated to designing handmade crochet 
+            accessories that celebrate individuality, culture, and connection.<br>
+
+<b>✨ Our Mission</b><br>
+To bring warmth, personality, and artistry into everyday life through thoughtfully crafted crochet pieces. We believe
+ in slow creation, sustainable practices, and designs that carry meaning beyond their beauty.<br>
+
+<b>🎨 What We Create<br></b>
+From personalized name keychains to symbolic sun & moon charms, protective evil eyes, and playful beaded designs
+, our products are more than accessories — they’re keepsakes. Each loop is carefully woven to reflect joy, protection, and creativity.<br>
+
+<b>💖 Why Choose Us</b><br>
+Handmade with love: Every piece is crafted by hand, ensuring uniqueness.
+
+Meaningful gifting: Perfect for birthdays, friendships, or personal milestones.
+
+Modern yet timeless: Vibrant designs that blend tradition with contemporary style.
+
+Sustainable creativity: Focused on mindful production, not mass manufacturing.<br>
+
+<b>🌱 Our Vision</b><br>
+URBBAN LOOPS is more than a shop — it’s a movement to celebrate personal expression and handmade artistry. We want 
+every accessory to feel like a small celebration, a reminder of connection, and a spark of creativity in daily life.</p>
+    </section>
+
+    <!-- PRODUCTS -->
+<section id="PRODUCTS" class="PRODUCTS">
+  <h2>PRODUCTS</h2>
+  <div class="PRODUCTS-container">
+
+    <div class="PRODUCTS">
+      <img src="amy.jpeg" alt="CROCHET NAME KEYCHAIN">
+      <p><strong>NAME KEYCHAIN</strong></p>
+      <p>₹160</p>
+      <button onclick="addToCart('NAME KEYCHAIN',160)">ADD TO CART</button>
+    </div>
+
+    <div class="PRODUCTS">
+      <img src="A crochet.jpeg" alt="CROCHET ALPHABET KEYCHAIN">
+      <p><strong>ALPHABET KEYCHAIN</strong></p>
+      <p>₹190</p>
+      <button onclick="addToCart('ALPHABET KEYCHAIN',190)">ADD TO CART</button>
+    </div>
+
+    <div class="PRODUCTS">
+      <img src="eyes crochet.jpeg" alt="CROCHET EYES KEYCHAIN">
+      <p><strong>EVIL EYES KEYCHAIN</strong></p>
+      <p>₹120</p>
+      <button onclick="addToCart('EVIL EYES KEYCHAIN',120)">ADD TO CART</button>
+    </div>
+
+    <div class="PRODUCTS">
+      <img src="sunmoon.jpeg" alt="MATCHING CROCHET KEYCHAIN">
+      <p><strong>BESTIES KEYCHAIN</strong></p>
+      <p>₹200</p>
+      <button onclick="addToCart('BESTIES KEYCHAIN',200)">ADD TO CART</button>
+    </div>
+
+    <div class="PRODUCTS">
+      <img src="star keychain.jpeg" alt="PEARL STAR KEYCHAIN">
+      <p><strong>STAR KEYCHAIN</strong></p>
+      <p>₹120</p>
+      <button onclick="addToCart('STAR KEYCHAIN',120)">ADD TO CART</button>
+    </div>
+
+    <div class="PRODUCTS">
+      <img src="bow keychain.jpeg" alt="PEARL BOW KEYCHAIN">
+      <p><strong>BOW KEYCHAIN</strong></p>
+      <p>₹110</p>
+      <button onclick="addToCart('BOW KEYCHAIN',110)">ADD TO CART</button>
+    </div>
+
+  </div>
+</section>
+
+    <!-- CART -->
+    <section id="CART" class="cart-section" style="display: none; margin: 20px;">
+        <h2>CART</h2>
+        <div id="cart-items"></div>
+        <p id="cart-total"><strong>Total: ₹0</strong></p>
+        <button onclick="showCheckout()">PROCEED TO CHECKOUT</button>
+
+        <div id="checkout-section" style="display: none; margin-top: 20px;">
+            <h3>CHECKOUT</h3>
+            <label><input type="radio" name="payment" value="UPI"> PAY WITH UPI</label><br>
+            <label><input type="radio" name="payment" value="COD"> CASH ON DELIVERY</label><br><br>
+            <button onclick="placeOrder()">PLACE ORDER</button>
+        </div>
+    </section>
+
+    <script src="script5.js"></script> <!-- External JS -->
+</body>
+</html>
